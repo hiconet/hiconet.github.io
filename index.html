@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>BizLand Bootstrap Template - Index</title>
+  <title>HiCoNet: An Advanced LPWAN Communication System</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -97,9 +97,9 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container" data-aos="zoom-out" data-aos-delay="100">
-      <h1>Welcome to <span>BizLand</spa>
+      <h1>Welcome to <span>HiCoNet</spa>
       </h1>
-      <h2>We are team of talanted designers making websites with Bootstrap</h2>
+      <h2>低功耗广域网技术</h2>
       <div class="d-flex">
         <a href="#about" class="btn-get-started scrollto">Get Started</a>
         <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox btn-watch-video" data-vbtype="video" data-autoplay="true"> Watch Video <i class="icofont-play-alt-2"></i></a>
@@ -188,9 +188,8 @@
               </li>
             </ul>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+              LoRa (Long Range) 是法国公司 Cycleo of Grenoble（在2012年被 Semtech 收购）研发的数字无线通信专利。LoRa使用免许可证的 sub-GHz 无线频段，如169 MHz、433 MHz、470 MHz（中国）、779 MHz（中国）、868 MHz（欧洲）和 915 MHz （北美）。LoRa能在支持超长距离通信（郊区超过10km）的同时保持低功耗。LoRa技术主要分为两部分，其物理层LoRa Phy和MAC层LoRaWAN(Long Range Wide Area Network)。
+              LoRa和LoRaWAN为城市、荒野、近海等地区的物联网（IoT）设备提供廉价的远距离连接。它们通常用于采矿、自然资源管理、可再生能源、横贯大陆物流和供应链管理等。
             </p>
           </div>
         </div>
@@ -803,7 +802,12 @@
             <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="icofont-simple-up"></i></a>
             <div id="faq4" class="collapse" data-parent=".faq-list">
               <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                LoRa物理层协议是封闭且有专利的，因此，没有免费提供的官方文件。但目前已有相关逆向工程的结果 Reversing-Lora-Knight gr-lora。
+
+LoRa symbol 编码
+LoRa基于CSS（Chirp Spreading Spectrum，啁啾扩频）编码，每一个传输的symbol是一个chirp。 LoRa用一个参数SF（Spreading Factor，扩频因子）来调控传输速率和通信距离，SF的定义为{\displaystyle 2^{SF}=B\cdot T}{\displaystyle 2^{SF}=B\cdot T}， 其中 B 为chirp扫频的带宽，T 为一个chirp持续的时间。
+
+基带上的一个basis upchirp可以表示为 {\displaystyle e^{j2\pi \left(-{\frac {B}{2}}+{\frac {B}{T}}t\right)t}}{\displaystyle e^{j2\pi \left(-{\frac {B}{2}}+{\frac {B}{T}}t\right)t}}，在时间 T 内其频率自 -B/2 线性增加到 B/2。 LoRa通过对一个basis upchirp的循环平移来编码 SF 个比特。
               </p>
             </div>
           </li>
